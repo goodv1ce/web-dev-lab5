@@ -1,0 +1,29 @@
+.footer-info-wrapper {
+    display: flex;
+    justify-content: right;
+}
+
+.footer-info {
+    margin: 0 40px;
+}
+
+
+.footer-info p {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Смартфони */
+@media screen and (max-width: 768px) {
+    .footer-info-wrapper {
+        justify-content: center;
+    }
+
+    .footer-info p {
+        font-size: 0.75em;
+    }
+
+    .footer-info {
+        margin: 0 5px;
+    }
+}

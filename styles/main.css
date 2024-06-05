@@ -1,0 +1,104 @@
+* {
+    font-family: sans-serif;
+}
+
+main {
+    background-color: #F8F8F8;
+}
+
+.info {
+    margin: auto;
+}
+
+.info #title {
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 auto 0;
+}
+
+.categories-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    /*justify-content: space-between;*/
+}
+
+.category-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+}
+
+.category-wrapper p {
+    text-align: center;
+    font-weight: bold;
+    height: 5%;
+    padding: 0 2%;
+    margin: 10px 0;
+}
+
+.category-wrapper img {
+    height: 80%;
+}
+
+.product-info {
+    margin: auto;
+}
+
+/* Смартфони */
+@media screen and (max-width: 768px) {
+    .categories-wrapper {
+        width: 90%;
+    }
+
+    .category-wrapper {
+        width: 45%;
+    }
+
+    main > article {
+        width: 85%;
+    }
+}
+
+/* Планшети */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .categories-wrapper {
+        width: 70%;
+    }
+
+    .category-wrapper {
+        width: 30%;
+    }
+
+    main > article {
+        width: 80%;
+    }
+}
+
+/* Комп'ютери */
+@media screen and (min-width: 992px) {
+    .categories-wrapper {
+        width: 40%;
+    }
+
+    .category-wrapper {
+        width: 30%;
+    }
+
+    main > article {
+        width: 50%;
+    }
+}
+
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+}

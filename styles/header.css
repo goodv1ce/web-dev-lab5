@@ -1,0 +1,282 @@
+header {
+    width: 100%;
+    background-color: #FFFFFF;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-family: sans-serif;
+}
+
+.top-btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.divider {
+    border-bottom: 1px solid #CCCCCC;
+    margin: 5px 0 5px;
+}
+
+#company-logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.search-bar-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-btn-wrapper .buttons a:visited,
+.top-btn-wrapper .buttons a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.top-btn-wrapper .buttons a:hover {
+    text-decoration: underline;
+}
+
+.top-btn-wrapper .buttons a {
+    margin-right: 10px;
+    font-family: sans-serif;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar-wrapper {
+    width: 100%;
+    justify-content: center;
+    background-color: #FFFFFF;
+    position: relative;
+    display: flex;
+}
+
+.search {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.search-logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.search-bar-wrapper .align-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.search-form {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-form > input {
+    flex: 1;
+    border: none;
+    outline: none;
+    text-align: center;
+    background-color: #F5F5F5;
+    padding: 0 15px;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.search-form .search-logo {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 75%;
+}
+
+.search-btn button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+
+.search-bar-actions img {
+    max-height: 100%;
+    max-width: 50%;
+}
+
+.search-bar-actions a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-text {
+    font-size: 0.75em;
+}
+
+.search-bar-actions a:hover,
+.search-bar-actions a:link,
+.search-bar-actions a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+/* Смартфони */
+@media screen and (max-width: 768px) {
+    .top-btn-wrapper {
+        height: 25px;
+    }
+
+    .search-bar-wrapper .align-wrapper {
+        width: 95%;
+        justify-content: center;
+    }
+
+    .top-btn-wrapper .buttons a {
+        font-size: 0.8em;
+    }
+
+    .search-bar-wrapper {
+        height: 60px;
+    }
+
+    .logo-wrapper {
+        height: 50px;
+        width: 50px;
+    }
+
+    .search {
+        height: 60%;
+        width: 70%;
+        padding: 0 15px;
+    }
+
+    .search-bar-actions {
+        height: 40%;
+        width: 20%;
+    }
+
+    .search-form input {
+        width: 80%;
+        height: 100%;
+    }
+
+    .submit-search-btn {
+        height: 50%;
+        width: 25%;
+    }
+
+    .search-form > input {
+        font-size: 0.75em;
+    }
+}
+
+/* Планшети */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .top-btn-wrapper {
+        height: 20px;
+    }
+
+    .search-bar-wrapper .align-wrapper {
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .top-btn-wrapper .buttons a {
+        font-size: 1.05em;
+    }
+
+    .search-bar-wrapper {
+        height: 120px;
+    }
+
+    .logo-wrapper {
+        height: 120px;
+        width: 120px;
+    }
+
+    .search {
+        height: 50%;
+        width: 70%;
+        padding: 0 30px;
+    }
+
+    .search-form > input {
+        font-size: 1.1em;
+    }
+
+    .search-bar-actions {
+        height: 50%;
+        width: 20%;
+    }
+
+    .search-bar-actions a {
+        font-size: 1.5em;
+    }
+}
+
+/* Комп'ютери */
+@media screen and (min-width: 992px) {
+    .top-btn-wrapper {
+        height: 20px;
+    }
+
+    .search-bar-wrapper .align-wrapper {
+        width: 55%;
+    }
+
+    .top-btn-wrapper .buttons a {
+        font-size: 1em;
+    }
+
+    .search-bar-wrapper {
+        height: 90px;
+    }
+
+    .logo-wrapper {
+        height: 90px;
+        width: 90px;
+    }
+
+    .search {
+        height: 50%;
+        width: 50%;
+    }
+
+    .align-wrapper {
+        justify-content: space-between;
+    }
+
+    .search-bar-actions {
+        height: 43px;
+        width: 100px;
+    }
+
+    .search-form > input {
+        font-size: 1em;
+    }
+}
